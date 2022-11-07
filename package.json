@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/danielmateu/06-webserver/issues"
   },
-  "homepage": "https://github.com/danielmateu/06-webserver#readme"
+  "homepage": "https://github.com/danielmateu/06-webserver#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
