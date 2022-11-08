@@ -7,9 +7,18 @@ const port = 8080;
 // Servir contenido estático
 app.use(express.static('public'));
 
-app.get('/hola-mundo', (req, res) => {
-    res.send('Hello World en su respectiva ruta')
+app.get('/generic', (req, res) => {
+    res.sendFile(__dirname + '/public/generic.html')
 });
+
+app.get('/elements', (req, res) => {
+    res.sendFile(__dirname + '/public/elements.html')
+});
+
+
+// app.get('/hola-mundo', (req, res) => {
+//     res.send('Hello World en su respectiva ruta')
+// });
 
 /* This is a catch-all route that will send the 404.html file to any request that doesn't match a
 previous route. */
