@@ -11,6 +11,8 @@ app.get('/hola-mundo', (req, res) => {
     res.send('Hello World en su respectiva ruta')
 });
 
+/* This is a catch-all route that will send the 404.html file to any request that doesn't match a
+previous route. */
 app.get('*', (req, res) => {
     res.sendFile(__dirname + '/public/404.html')
 })
